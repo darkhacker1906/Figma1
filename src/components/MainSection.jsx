@@ -1,4 +1,13 @@
-import { Box, Divider, List, ListItem, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Divider,
+  List,
+  ListItem,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
 
 function MainSection() {
@@ -116,26 +125,353 @@ function MainSection() {
             What's Included
           </Typography>
           <Box>
-            <Box sx={{display:"flex",justifyContent:"space-between"}}>
-              <List sx={{width:"350px", listStyleType: "disc",ml:2,'&.MuiList-padding':"5px"}}>
-                <ListItem sx={{ display: "list-item", fontSize: "18px" }}> Beverages, drinking water, morning tea and buffet lunch</ListItem>
-                <ListItem sx={{ display: "list-item", fontSize: "18px" }}>Local taxes</ListItem>
-                <ListItem sx={{ display: "list-item", fontSize: "18px" }}>Hotel pickup and drop-off by air-conditioned minivan</ListItem>
-                <ListItem sx={{ display: "list-item", fontSize: "18px" }}>InsuranceTransfer to a private pier</ListItem>
-                <ListItem sx={{ display: "list-item", fontSize: "18px" }}>Soft drinks</ListItem>
-                <ListItem sx={{ display: "list-item", fontSize: "18px" }}>Tour Guide</ListItem>
-              </List>
-              <List>
-                <ListItem>Towel</ListItem>
-                <ListItem>Tips</ListItem>
-                <ListItem>Alcoholic Beverages</ListItem>
-              </List>
+            <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+              <Box>
+                <Box
+                  sx={{
+                    fontSize: "18px",
+                    alignItems: "flex-start",
+                    gap: 2,
+                    display: "flex",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: 20,
+                      background: "#EFF7F1",
+                    }}
+                  ></Typography>
+                  <Typography sx={{ mb: "10px", width: 300 }}>
+                    Beverages, drinking water, morning tea and buffet lunch
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    fontSize: "18px",
+                    alignItems: "flex-start",
+                    gap: 2,
+                    display: "flex",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: 20,
+                      background: "#EFF7F1",
+                    }}
+                  ></Typography>
+                  <Typography sx={{ mb: "10px" }}>Local taxes</Typography>
+                </Box>
+                <Box
+                  sx={{
+                    fontSize: "18px",
+                    alignItems: "flex-start",
+                    gap: 2,
+                    display: "flex",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: 20,
+                      background: "#EFF7F1",
+                    }}
+                  ></Typography>
+                  <Typography sx={{ mb: "10px", width: 300 }}>
+                    Hotel pickup and drop-off by air-conditioned minivan
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    fontSize: "18px",
+                    alignItems: "flex-start",
+                    gap: 2,
+                    display: "flex",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: 20,
+                      background: "#EFF7F1",
+                    }}
+                  ></Typography>
+                  <Typography sx={{ mb: "10px" }}>
+                    InsuranceTransfer to a private pier
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    fontSize: "18px",
+                    alignItems: "flex-start",
+                    gap: 2,
+                    display: "flex",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: 20,
+                      background: "#EFF7F1",
+                    }}
+                  ></Typography>
+                  <Typography sx={{ mb: "10px" }}>Soft drinks</Typography>
+                </Box>
+                <Box
+                  sx={{
+                    fontSize: "18px",
+                    alignItems: "flex-start",
+                    gap: 2,
+                    display: "flex",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: 20,
+                      background: "#EFF7F1",
+                    }}
+                  ></Typography>
+                  <Typography sx={{ mb: "10px" }}>Tour Guide</Typography>
+                </Box>
+              </Box>
+              <Box>
+                <Box
+                  sx={{
+                    fontSize: "18px",
+                    alignItems: "flex-start",
+                    gap: 2,
+                    display: "flex",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: 20,
+                      background: "#FFE5E5",
+                    }}
+                  ></Typography>
+                  <Typography sx={{ mb: "10px" }}>Towel</Typography>
+                </Box>
+                <Box
+                  sx={{
+                    fontSize: "18px",
+                    alignItems: "flex-start",
+                    gap: 2,
+                    display: "flex",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: 20,
+                      background: "#FFE5E5",
+                    }}
+                  ></Typography>
+                  <Typography sx={{ mb: "10px" }}>Tips</Typography>
+                </Box>
+                <Box
+                  sx={{
+                    fontSize: "18px",
+                    alignItems: "flex-start",
+                    gap: 2,
+                    display: "flex",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      width: 30,
+                      height: 30,
+                      borderRadius: 20,
+                      background: "#FFE5E5",
+                    }}
+                  ></Typography>
+                  <Typography sx={{ mb: "10px" }}>
+                    Alcoholic Beverages
+                  </Typography>
+                </Box>
+              </Box>
             </Box>
             <Divider sx={{ mb: 5, mt: 5 }} />
             <Box></Box>
           </Box>
         </Box>
-        <Box sx={{ width: "30%" }}></Box>
+        <Box sx={{ width: "30%", display: "flex", justifyContent: "center" }}>
+          <Card sx={{ width: "90%", height: "90%", p: 2 }}>
+            <CardContent>
+              <Box
+                sx={{ display: "flex", alignItems: "center", gap: 1, mt: 2 }}
+              >
+                <Typography>From</Typography>
+                <Typography sx={{ fontSize: 23, fontWeight: 500 }}>
+                  $1,200
+                </Typography>
+              </Box>
+              <Box
+                height={"200px"}
+                sx={{ border: "2px solid #ECEFF1", borderRadius: 10, mt: 4 }}
+              >
+                <Box
+                  height={"50%"}
+                  width={"100%"}
+                  sx={{ display: "flex", p: 3, gap: "7px" }}
+                >
+                  <Box
+                    sx={{
+                      width: 55,
+                      height: 55,
+                      borderRadius: 5,
+                      background: "#F5F5F5",
+                    }}
+                  ></Box>
+                  <Box>
+                    <Typography>From</Typography>
+                    <Typography>February 05 ~ March 14</Typography>
+                  </Box>
+                </Box>
+                <Divider />
+                <Box
+                  height={"50%"}
+                  width={"100%"}
+                  sx={{ display: "flex", p: 3, gap: "7px" }}
+                >
+                  <Box
+                    sx={{
+                      width: 55,
+                      height: 55,
+                      borderRadius: 5,
+                      background: "#F5F5F5",
+                    }}
+                  ></Box>
+                  <Box>
+                    <Typography>From</Typography>
+                    <Typography>February 05 ~ March 14</Typography>
+                  </Box>
+                </Box>
+              </Box>
+              <Typography sx={{ fontSize: 25, fontWeight: 500, mt: 5 }}>
+                Tickets
+              </Typography>
+              <Stack sx={{ gap: 2, mt: 2 }}>
+                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                  <Typography>Adult (18+ years) $282.00</Typography>
+                  <Typography sx={{ display: "flex", gap: 1 }}>
+                    <Typography
+                      sx={{
+                        width: 30,
+                        height: 30,
+                        border: "1px solid #e1dcdc",
+                        borderRadius: 10,
+                      }}
+                    ></Typography>
+                    <Typography>3</Typography>
+                    <Typography
+                      sx={{
+                        width: 30,
+                        height: 30,
+                        border: "1px solid #e1dcdc",
+                        borderRadius: 10,
+                      }}
+                    ></Typography>
+                  </Typography>
+                </Box>
+                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                  <Typography>Adult (18+ years) $282.00</Typography>
+                  <Typography sx={{ display: "flex", gap: 1 }}>
+                    <Typography
+                      sx={{
+                        width: 30,
+                        height: 30,
+                        border: "1px solid #e1dcdc",
+                        borderRadius: 10,
+                      }}
+                    ></Typography>
+                    <Typography>3</Typography>
+                    <Typography
+                      sx={{
+                        width: 30,
+                        height: 30,
+                        border: "1px solid #e1dcdc",
+                        borderRadius: 10,
+                      }}
+                    ></Typography>
+                  </Typography>
+                </Box>
+                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                  <Typography>Adult (18+ years) $282.00</Typography>
+                  <Typography sx={{ display: "flex", gap: 1 }}>
+                    <Typography
+                      sx={{
+                        width: 30,
+                        height: 30,
+                        border: "1px solid #e1dcdc",
+                        borderRadius: 10,
+                      }}
+                    ></Typography>
+                    <Typography>3</Typography>
+                    <Typography
+                      sx={{
+                        width: 30,
+                        height: 30,
+                        border: "1px solid #e1dcdc",
+                        borderRadius: 10,
+                      }}
+                    ></Typography>
+                  </Typography>
+                </Box>
+              </Stack>
+              <Stack sx={{ mt: 2, gap: 2 }}>
+                <Box>
+                  <Typography sx={{ fontSize: 25 }}>Add Extra</Typography>
+                </Box>
+                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                  <Box sx={{ display: "flex", gap: 1 }}>
+                    <Typography
+                      sx={{
+                        height: 30,
+                        width: 30,
+                        borderRadius: 2,
+                        border: "1px solid #E1DCDC",
+                      }}
+                    ></Typography>
+                    <Typography>Add Service per booking</Typography>
+                  </Box>
+                  <Typography>$40</Typography>
+                </Box>
+                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                  <Box sx={{ display: "flex", gap: 1 }}>
+                    <Typography
+                      sx={{
+                        height: 30,
+                        width: 30,
+                        borderRadius: 2,
+                        border: "1px solid #E1DCDC",
+                      }}
+                    ></Typography>
+                    <Typography>Add Service per booking</Typography>
+                  </Box>
+                  <Typography>$40</Typography>
+                </Box>
+              </Stack>
+              <Typography sx={{mb:1,pt:1,pb:1}}>Adult: $17.00 - Youth: $14.00</Typography>
+              <Divider />
+              <Box sx={{display:'flex',justifyContent:'space-between',mt:1,pt:1,pb:1}}>
+                <Typography>Total</Typography>
+                <Typography>$530.00</Typography>
+              </Box>
+              <Box sx={{height:60,width:"100%",background:"#EB662B",borderRadius:5,textAlign:"center",display:"flex",justifyContent:"center",alignItems:"center",fontSize:26,color:"white"}}>Book Now</Box>
+            </CardContent>
+          </Card>
+        </Box>
       </Box>
     </>
   );
